@@ -1,0 +1,29 @@
+<html>
+   <head>
+       <style>
+           h1{
+               color: crimson;
+               background-color:aliceblue;
+           }
+           h2{
+               color:cadetblue;
+               
+           }
+       </style>
+    </head>
+    <body bgcolor='gainsboro'>
+        <center>
+        <h1> STUDENT RECORDS</h1>
+        {% for x in stud %}
+        <h2>Name:{{x.name}}</h2>
+        <h2>Roll:{{x.roll}}</h2>
+        <h2>Marks:{{x.marks}}</h2>
+        <h2>DOB:{{x.dob}}</h2>
+        <h2>Email:{{x.email}}</h2><hr/>
+        {% endfor %}
+       
+        
+        </center>
+    </body>
+
+</html>
